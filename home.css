@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+:root{
+    --bluelectric: #2424F2;
+    --ambeee: #E7A026;
+    --second: #303030;
+    --black: black;
+    --white: white;
+    --ombrablu: 0px 0px 20px 20px #2424f267;
+    --ombrarancione: 0px 0px 20px 20px rgba(248, 123, 6, 0.4);
+    --link: #13FF22;
+}
+
+#sfondo{
+    width: 100%;
+    margin-top: -8%;
+
+    position:relative;
+    display: flex;
+}
+
+#logo{  
+    height: 10%;
+    margin: 1%;
+}
+
+#Titolo{
+    display: flex;
+    flex-direction: column;
+}
+
+#welcome{
+    width: 20%;
+    margin-top: -48%;
+    margin-left: 10%;
+    position: sticky;
+}
+
+#webeee{
+    width: 60%;
+    margin: 1% 7%;
+
+    position: sticky;
+}
+
+#firma{
+    width: 3%;
+    margin: -37% 0 0 96%;
+    position: sticky;
+}
