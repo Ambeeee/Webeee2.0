@@ -5,7 +5,7 @@
         <link rel="shortcut icon" href="images/progettazione/logo.png" type="image/png">
         <!--Script-->
         <link rel="stylesheet" href="home.css">
-        <script src=script.js></script>
+        <script src="script.js"></script>
         <!--Mobile-->
         <meta name="viewport" content="width=device-width">
         <!--Fonts-->
@@ -20,16 +20,28 @@
     </head>
     
     <body>
+        <!--SFONDO-->
+        <img src="images/progettazione/Sfondo.png" id="sfondo">
         
-        <div id="NavBar">
-            <img src="images/progettazione/logo.png" id="logo">
-            <img src="images/progettazione/Sfondo.png" id="sfondo">
-        </div>
-        
+        <!--INTESTAZIONE-->
         <div id="Titolo">
             <img src="images/progettazione/Sottotitolo.png" id="welcome">
             <img src="images/progettazione/Titolo.png" id="webeee">
             <img src="images/progettazione/firma.png" id="firma">
         </div>
+        <!--MENU-->
+        <img src="images/progettazione/logo.png" id="logo" onclick="apriMenu()">
+        
+
+        <div id="menu">
+            <a href="home.html"><div id=Tab>Home</div></a>
+            <div id=Tab>News</div>
+            <div id=Tab>Gallery</div>
+            <div id=Tab>[Accedi]</div>
+        </div>
+        <!--PAGINA-->
+        <div id="Pagina">
+        </div>
+        
     </body>
 </html>

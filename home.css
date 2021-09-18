@@ -1,6 +1,7 @@
+/*GENERALE*/
 *{
     margin: 0;
-    padding: 0;
+    padding: 2.7% 0 0 0;
     text-decoration: none;
 }
 
@@ -23,10 +24,9 @@
     display: flex;
 }
 
-#logo{  
-    height: 10%;
-    margin: 1%;
-}
+
+
+/*INTESTAZIONE*/
 
 #Titolo{
     display: flex;
@@ -35,7 +35,7 @@
 
 #welcome{
     width: 20%;
-    margin-top: -48%;
+    margin-top: -56%;
     margin-left: 10%;
     position: sticky;
 }
@@ -49,6 +49,70 @@
 
 #firma{
     width: 3%;
-    margin: -37% 0 0 96%;
+    margin: -48% 0 0 96%;
     position: sticky;
+}
+
+
+/*MENU*/
+#logo{  
+    height: 10%;
+    margin: -40% 0 0 92%;
+    position: fixed;
+}
+
+#logo:hover{
+    transform: scale(1.1);
+}
+
+#menu{
+    height: 10%;
+    margin: -45% 10% 0 85%;
+    
+    position: fixed;
+    display: none; /*flex*/
+    flex-direction: column;
+}
+
+#Tab{
+    height: 30%;
+    width: 110%;
+    padding: 20%;
+    margin: 0% 5% 20% 0%;
+
+    background-color: white;
+
+    color: var(--second);
+    font-family: 'Permanent Marker', cursive;
+    border-radius: 20px;
+
+}
+
+#Tab:hover{
+    transform: scale(1.05);
+}
+
+
+/*PAGINA*/
+#Pagina{
+    height: 5%;
+    margin-top: -5%;
+    padding-top: 100%;
+
+    position: static;
+    background-color: #E7A026;
+}
+#consigliati{
+    height: 10%;
+    width: 15%;
+    margin: -95% 40%;
+    padding: 1% 2% 3% 1%;
+
+    background-color: var(--second);
+    color: var(--white);
+    font-family: 'Permanent Marker', cursive;
+    font-size: 125%;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
 }
