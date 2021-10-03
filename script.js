@@ -1,16 +1,17 @@
 //MENU
 
-var MENU = "chiuso";
-var menu = document.getElementById("menu")
+var MENU = 0
+var menu = document.getElementById("Tab")
 
-function apriMenu(){
-    if(MENU == "chiuso"){
+function ApriMenu(){
+    if(MENU == "0"){
         menu.style.display = "flex";
-        MENU = "aperto";
+        MENU = MENU+1;
     }
 
     else{
         menu.style.display = "none";
-        MENU = "chiuso";
+        MENU = MENU-1;
     }    
 }
+
