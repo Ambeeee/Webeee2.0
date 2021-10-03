@@ -76,7 +76,7 @@
     margin: -56% 0% 0% 92.5%;
     
     position: fixed;
-    display: flex; /*flex*/
+    display: none; /*flex*/
     flex-direction: column;
 }
 
