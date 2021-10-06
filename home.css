@@ -50,14 +50,6 @@
     position: sticky;
 }
 
-#firma{
-    width: 3%;
-    margin: -48% 0 0 96%;
-
-    position: sticky;
-    display: none;
-}
-
 
 /*MENU*/
 #logo{  
@@ -65,41 +57,39 @@
     margin: -62% 8% 0 93%;
     position: fixed;
     cursor: pointer;
+    transition: transform 0.2s ease-in-out;
 }
 
 #logo:hover{
     transform: scale(1.05);
 }
 
-#Menu{
-    height: 10%;
-    margin: -56% 0% 0% 92.5%;
-    
+#menu{
+    width: 5%;
+    top: -12%;
+    right: 35%;
+
     position: fixed;
-    display: none; /*flex*/
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
 }
 
-#Tab{
-    height: 30%;
-    width: 110%;
-    padding: 20%;
-    margin: 0% 0% 0% 0%;
-
-    background-color: white;
-    box-shadow: 1%;
-    position: relative;
+.tab{
+    width: 90%;
+    margin: 0% 30px; /*30px*/
     
-    color: var(--grey);
-    font-family: 'Permanent Marker', cursive;
-    font-size: 90%;
-    border-radius: 20px;
-    text-align: center;
+    background-color: var(--white);
+    border-radius: 25px;
 
+    font-size: 100%;
+    color: var(--grey);
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
 }
 
-#Tab:hover{
+.tab:hover{
     transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
     color: var(--bluelectric)
 }
 

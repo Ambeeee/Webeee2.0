@@ -5,7 +5,18 @@
         <link rel="shortcut icon" href="images/progettazione/logo.png" type="image/png">
         <!--Script-->
         <link rel="stylesheet" href="home.css">
-        <script src="script.js"></script>
+        <script lang="JavaScript">
+            function ApriMenu(){
+                menu = document.getElementById("menu");
+                logo = document.getElementById("logo");
+                if(menu.style.display == "none"){
+                    menu.style.display = "flex";
+                }
+                else{
+                    menu.style.display = "none";
+                }
+            }
+        </script>
         <!--Fonts-->
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
@@ -21,19 +32,28 @@
         <!--INTESTAZIONE-->
         <div id="Titolo">
             <img src="images/progettazione/Sottotitolo.png" id="welcome">
-            <img src="images/progettazione/Titolo.png" id="webeee">
-            <img src="images/progettazione/firma.png" id="firma">
+            <img src="images/progettazione/Titolo.png" id="webeee" title="E i tecnici del MIUR muti.">
         </div>
-        <!--MENU-->
-        <img src="images/progettazione/logo.png" id="logo" type= "image/png" onclick="ApriMenu()">
-        
 
-        <div id="Menu">
-            <a href="home.html"><div id=Tab>Home</div></a>
-            <a href="pagine/news.html"><div id=Tab>News</div></a>
-            <a><div id=Tab>Gallery</div></a>
-            <a href="accedi.html"><div id=Tab>[Accedi]</div></a>
+        <!--MENU-->
+        <img src="images/progettazione/logo.png" id="logo" type= "image/png" title="Apri il menu" onclick="ApriMenu()">
+        
+        <div id="menu" style="display: none">
+            <a href="home.html">
+                <div class=tab title="torna alla pagina iniziale">Home</div>
+            </a>
+            <a href="pagine/gallery.html">
+                <div class=tab title="vai alla Gallery">Gallery</div>
+            </a>
+            <a href="pagine/news.html">
+                <div class=tab title="vai alle notizie">News</div>
+            </a>
+            <a href="pagine/accedi.html">
+                <div class=tab title="accedi">[Accedi]</div>
+            </a>
+            
         </div>
+
         <!--PAGINA-->
         <div id="Pagina">
         </div>

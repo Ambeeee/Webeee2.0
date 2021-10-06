@@ -18,3 +18,17 @@ V2.0.2.0
     script.js:
         prova menu
     accedi.html + css #New
+
+V2.0.3.1
+    home:
+        risolto menu!
+         ma non responsive :(
+    Statuses:
+        script.js #deleted
+        gallery.html #added
+        news.html #added
+        pagine.css #added
+        accedi.html #moved into pagine/
+        accedi.css #moved into pagine/
+    -->pagine.css
+    -->news.html
