@@ -32,3 +32,14 @@ V2.0.3.1
         accedi.css #moved into pagine/
     -->pagine.css
     -->news.html
+
+V2.0.4
+    Statuses:
+        news.html #added #ready
+        pagine.css #added #ready-for-news
+        newsPres #added
+        razzo.html #added.ready
+        newsPres.html #added #ready-but-upgradable
+    --->responsive (different or integrated?)
+    --->newsPres #complete
+    

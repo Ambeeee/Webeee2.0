@@ -1,0 +1,133 @@
+<html>
+    <head>
+        <!--Titolo-->
+        <title>News/Pres - Webeee2.0</title>
+        <link rel="shortcut icon" href="../../images/progettazione/logo.png" type="image/png">
+        <!--SCRIPTS-->
+        <link rel="stylesheet" href="newsStyle.css">
+        <!--apri menu-->
+        <script lang="JavaScript">
+            function ApriMenu(){
+                menu = document.getElementById("menu");
+                logo = document.getElementById("logo");
+                if(menu.style.display == "none"){
+                    menu.style.display = "flex";
+                }
+                else{
+                    menu.style.display = "none";
+                }
+            }
+        </script>
+        <!--cerca-->
+        <script lang="JavaScript">
+            function ricerca() {
+                input = document.getElementById("barra");
+                filtro = input.value.toUpperCase();
+                lista = document.getElementById("elencoTag");
+                voci = lista.getElementsByTagName("a");
+                lista.style.display = "flex";
+                for (i = 0; i < voci.length; i++) {
+                    x = lista.getElementsByTagName("a")[i];
+                    testo = x.textContent || x.innerText;
+                    if (testo.toUpperCase().indexOf(filtro) > -1) {
+                        voci[i].style.display = "";
+                    } else {
+                        voci[i].style.display = "none";
+                    }
+                }
+            }
+            function chiuditutto(){
+                lista = document.getElementById("elencoTag");
+                lista.style.display = "none";
+            }
+        </script>
+        <!--Fonts-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <!--SFONDO-->
+        <img src="../../images/news/Pres/BozzaCover.png" id="sfondo">
+        <!--INTESTAZIONE-->
+        <div id="intestazione">
+            <img src="../images/progettazione/News.png" id="titolo">
+        </div>
+        <!--MENU-->
+        <img src="../../images/progettazione/logo.png" id="logo" type= "image/png" title="Apri il menu" onclick="ApriMenu()">
+        
+        <div id="menu" style="display: none">
+            <a href="../../../home.html">
+                <div class=tab title="torna alla pagina iniziale">Home</div>
+            </a>
+            <a href="../../gallery.html">
+                <div class=tab title="vai alla Gallery">Gallery</div>
+            </a>
+            <a href="../../news.html">
+                <div class=tab title="vai alle notizie">News</div>
+            </a>
+        </div>
+
+
+
+
+        <!--Pagina-->
+        <img id="SfondoPagina" src="../../images/progettazione/Pagina Pres.png" onclick="chiuditutto()">
+        <div id="intro">
+                <p>Alessandro Flavio Ridolfi è un imprenditore originario della metropoli di Baiano, capitale del Pianeta. 
+                    Per raggiungere il suo attuale potere, lottato tanto e dopo epiche imprese è riuscito a diventare Presidente,
+                    guadagnandosi la stima dei suoi compagni. E' un mago del marketing e il DeepWeb non ha segreti con lui,
+                    è stato il primo magnate a credere nelle criptovalute, che ha minato a fianco di altri del calibro di Elon Musk
+                    fino a due anni fa, quando ha radunato le menti più brillanti della Terra con i quali opera per abbattere le
+                    frontiere dell'innovazione, all'interno del Bunker più grande e all'avanguardia del mondo. </p>
+        </div>
+        <!--Barra di Ricerca-->
+        <input type="text" id="barra" placeholder="Cerca qui la notizia" style="font-style: italic;"  onkeyup="ricerca()" onkeydown="ricercaDown()">
+        <div class="button" style="display: none;">cerca</div>
+        <ul id="elencoTag" type="text">
+            <a href="">#covid #bunker</a>
+            <a href="">#inno #baiano</a>
+            <a href="">#razzo #spazio #bunker</a>
+        </ul>
+        <div class="pagina">
+            <!--Covid-->
+            <a href="PresNews/inno.html">
+                <div class="notizia">
+                    <div class="testo" style="margin: 0% 8%;">
+                        <div class="Titolo">Alessandro Ridolfi, con il Covid in quarantena nel bunker di Baiano</div>
+                        <div class="Descrizione">"Ma che è sto rumore?" se stìono a chiede tutti.
+                            Maggiori informazioni sono trapelate dallo stesso Alessandro Flavio Ridolfi...</div>
+                        <div class="tag">#covid #bunker</div>
+                    </div>
+                    <div class="newsImg"><img src="../../images/news/Pres/1 covid.png"></div>
+                </div>
+            </a>
+            <!--InnoABaiano-->
+            <a href="PresNews/inno.html">
+                <div class="notizia">
+                    <div class="testo" style="margin: 0% 8%;">
+                        <div class="Titolo">Italia, Ridolfi cambia l'Inno Nazionale in qualcosa di più... Patriottico</div>
+                        <div class="Descrizione"><br></div>
+                        <div class="tag">#inno #baiano</div>
+                    </div>
+                    <div class="newsImg"><img src="../../images/news/Pres/2 inno.jpeg"></div>
+                </div>
+            </a>
+            <!--RazzoCinese-->
+            <a href="newsPres/razzo.html">    
+                <div class="notizia">
+                    <div class="testo" style="margin: 0% 8%;">
+                        <div class="Titolo">Spazio, tutti al sicuro nel Bunker di Ridolfi </div>
+                        <div class="Descrizione">A distanza di soli due giorni dall'annuncio del cambio dell'inno d'Italia...</div>
+                        <div class="tag">#razzo #spazio #bunker</div>
+                    </div>
+                    <div class="newsImg"><img src="../../images/news/Pres/3 razzo.jpeg"></div>
+                </div>
+            </a>
+        </div>
+    </body>
+
+</html>

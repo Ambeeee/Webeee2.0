@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <!--Titolo-->
+        <title>News - Webeee2.0</title>
+        <link rel="shortcut icon" href="../images/progettazione/logo.png" type="image/png">
+        <!--Script-->
+        <link rel="stylesheet" href="pagine.css">
+        <script lang="JavaScript">
+            function ApriMenu(){
+                menu = document.getElementById("menu");
+                logo = document.getElementById("logo");
+                if(menu.style.display == "none"){
+                    menu.style.display = "flex";
+                }
+                else{
+                    menu.style.display = "none";
+                }
+            }
+        </script>
+        <!--Fonts-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+        <!--SFONDO-->
+        <img src="../images/progettazione/sfondo News.png" id="sfondo">
+        
+        <!--INTESTAZIONE-->
+        <div id="intestazione">
+            <img src="../images/progettazione/News.png" id="titolo" title="Per essere sempre aggiornati!">
+        </div>
+
+        <!--MENU-->
+        <img src="../images/progettazione/logo.png" id="logo" type= "image/png" title="Apri il menu" onclick="ApriMenu()">
+        
+        <div id="menu" style="display: none">
+            <a href="../home.html">
+                <div class=tab title="torna alla pagina iniziale">Home</div>
+            </a>
+            <a href="gallery.html">
+                <div class=tab title="vai alla Gallery">Gallery</div>
+            </a>
+            <a href="news.html">
+                <div class=tab title="vai alle notizie">News</div>
+            </a>
+            
+        </div>
+
+        <!--PAGINA-->
+        <a href="News/newsPres.html"><img class="titoloNews" id="NewsPres" src="../images/progettazione/Titoletto Pres.png" href="News/newsPres.html"></div></a>
+        <a href="News/gallery.html"><img class="titoloNews" id="NewsSpettacolo" src="../images/progettazione/Titoletto Spettacolo.png"></div></a>
+        <div id="pagina"></div>
+    </body>
+</html>
