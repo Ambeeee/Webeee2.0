@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <!--Titolo-->
+        <title>News/Pres - Webeee2.0</title>
+        <link rel="shortcut icon" href="../../../images/progettazione/logo.png" type="image/png">
+        <!--SCRIPTS-->
+        <link rel="stylesheet" href="newsPres.css">
+        <!--apri menu-->
+        <script lang="JavaScript">
+            function ApriMenu(){
+                menu = document.getElementById("menu");
+                logo = document.getElementById("logo");
+                if(menu.style.display == "none"){
+                    menu.style.display = "flex";
+                }
+                else{
+                    menu.style.display = "none";
+                }
+            }
+        </script>
+        <!--Fonts-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <!--SFONDO-->
+        <img src="../../../images/progettazione/marchio1.png" id="sfondo">
+        </div>
+        <!--MENU-->
+        <img src="../../../images/progettazione/logo.png" id="logo" type= "image/png" title="Apri il menu" onclick="ApriMenu()">
+        <div id="menu" style="display: none">
+            <a href="../../../home.html">
+                <div class=tab title="torna alla pagina iniziale">Home</div>
+            </a>
+            <a href="../../gallery.html">
+                <div class=tab title="vai alla Gallery">Gallery</div>
+            </a>
+            <a href="../../news.html">
+                <div class=tab title="vai alle notizie">News</div>
+            </a>
+        </div>
+
+
+
+
+        <!--PAGINA-->
+        <div id="Titolo">Baiano. Dipendente del Bunker Ridolfi si licenzia dalla sezione meteo. "Decide tutto lui"</div>
+        <div id="data">🕑 13 maggio 2021</div>
+        <div id="Intro">
+            Colpo basso per la società Baianese e per la reputazione del businessman Alessandro Ridolfi.
+            Un meteorologo si lamenta delle condizioni in cui svolge il proprio lavoro.
+        </div>
+        <div id="suggeriti">
+            <div class="titoletto">Leggi Anche:</div>
+            <a class="option"></a>
+        </div>
+        <div class="Testo" style="margin-top: -12%;">
+            Come già detto in precedenza, <b>Alessandro Flavio Ridolfi</b> ha giocato un ruolo da protagonista durante
+            il G20 per la cultura. Infatti ha annunciato che per favorire il turismo nella zona balneare del
+            <b>laghetto di baiano,</b> lui e la sua equipe di ricercatori stanno sviluppando un marchingegno
+            -lo definiscono <i>"l'accroccu"-</i> per controllare il meteo dell'area mantenendolo sempre soleggiato
+            e con temperature miti.<br><br>Innovativa e utile alla società, no?<br><br>
+            Non per tutti. Il presidente dell'associazione <b>Baiano Weather</b> ha indetto uno sciopero a favore di
+            tutti i dipendenti che ogni giorno lavorano per garantire previsioni più accurate possibili.
+        </div>
+        <img class="Foto" src=".../../../../../images/news/Pres/4 meteo.png">
+        <div class="Testo">
+            Nel frattempo lo <i>S.L.B. (Statuto per il Lavoro nei Bunker)</i> ha già attivato la pratica,
+            tuttavia nell'attesa di un compromesso tra le parti uno scienziato ha già lasciato il
+            posto scaturendo diverse reazioni dalle testate giornalistiche sul campo.<br><br>
+            Ora resta solo aspettare nuove dichiarazioni e soluzioni da parte del magnate,
+            in ogni caso noi di <a class="link" style="font-family: Shelman;" href="../../../home.html">Webeee</a>
+            saremo sempre pronti in prima fila per portarvi eventuali novità.
+        </div>
+        <img id="firma" src="../../../images/progettazione/Marchio2.png">
+    </body>
+</html>

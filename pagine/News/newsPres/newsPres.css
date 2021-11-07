@@ -1,7 +1,7 @@
 /*GENERALE*/
 *{
     margin: 2% 0% 0% 0%;
-    padding: 4% 0 0% 0;
+    padding: 4% 0 2% 0%;
     text-decoration: none;
 }
 :root{
@@ -102,7 +102,7 @@
 }
 .Testo{
     width: 60%;
-    margin: 5% 2% 5% 8%;
+    margin: 1% 2% 5% 8%;
 
     font-size: 150%;
     font-family: 'Mukta', sans-serif;
@@ -111,14 +111,46 @@
 
 }
 .Foto{
-    width: 30%;
+    width: 60%;
     margin: 0% 0% 0% 8%;
     padding: 0% 0% 0% 0%;
 
     border-radius: 25px;
 }
+#suggeriti{
+    width: 25%;
+    margin: 0% 0% 0% 72%;
+    display: flex;
+    flex-direction: column;
+}
+.titoletto{
+    padding: 2% 0% 2% 35%;
+
+    background-color: var(--bluelectric);
+    border-radius: 20px;
+    cursor: default;
+
+    color: var(--white);
+    font-family: permanent marker;
+    font-size: 150%;
+}
+.option{
+    width: 25%;
+    padding: 1% 24%;
+    margin: 2% 15%;
+
+    box-shadow: 1px 1px 1px 1px;
+    border-radius: 25px;
+    cursor: pointer;
+
+    font-family: Roboto Mono;
+    text-align: center;
+}
 #firma{
     width: 4%;
-    margin: 1% 48%;
+    bottom: 0%;
+    margin: 1% 48% -1% 48%;
+
+    position: fixed;
     cursor: none;
 }

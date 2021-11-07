@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <!--Titolo-->
+        <title>News/Pres - Webeee2.0</title>
+        <link rel="shortcut icon" href="../../../images/progettazione/logo.png" type="image/png">
+        <!--SCRIPTS-->
+        <link rel="stylesheet" href="newsPres.css">
+        <!--apri menu-->
+        <script lang="JavaScript">
+            function ApriMenu(){
+                menu = document.getElementById("menu");
+                logo = document.getElementById("logo");
+                if(menu.style.display == "none"){
+                    menu.style.display = "flex";
+                }
+                else{
+                    menu.style.display = "none";
+                }
+            }
+        </script>
+        <!--Fonts-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <!--SFONDO-->
+        <img src="../../../images/progettazione/marchio1.png" id="sfondo">
+        </div>
+        <!--MENU-->
+        <img src="../../../images/progettazione/logo.png" id="logo" type= "image/png" title="Apri il menu" onclick="ApriMenu()">
+        <div id="menu" style="display: none">
+            <a href="../../../home.html">
+                <div class=tab title="torna alla pagina iniziale">Home</div>
+            </a>
+            <a href="../../gallery.html">
+                <div class=tab title="vai alla Gallery">Gallery</div>
+            </a>
+            <a href="../../news.html">
+                <div class=tab title="vai alle notizie">News</div>
+            </a>
+        </div>
+
+
+
+
+        <!--PAGINA-->
+        <div id="Titolo">Italia. Ridolfi cambia l'Inno Nazionale in qualcosa di più... Patriottico</div>
+        <div id="data">🕑 6 maggio 2021</div>
+        <div id="Intro"></div>
+        <div id="suggeriti">
+            <div class="titoletto">Leggi Anche:</div>
+            <a class="option">ciao</a>
+        </div>
+        <div class="Testo" style="margin-top: -12%;">
+            E' successo davvero. Molti dei nostri lettori attendevano ansiosi la conferma della notizia
+            trapelata qualche giorno fa dai profili social del magnate Baianese Alessandro Flavio Ridolfi.
+            Infatti il noto imprenditore proprietario del bunker al di sotto della Metropoli di Baiano,
+            durante un incontro con il capo dello stato Sergio Mattarella, ha annunciato un sostanziale
+            cambiamento di uno dei pilastri della nostra Repubblica.
+        </div>
+        <img class="Foto" src=".../../../../../images/news/Pres/2 inno.jpeg">
+        <div class="Testo">
+            A molti di voi sarà sicuramente capitato di andare allo stadio e sostenere la nostra Nazionale,
+            assistere ad un concerto della banda della Polizia di Stato o a qualsiasi manifestazione Istituzionale.
+            Bene, questi eventi in genere iniziano sempre con il celebre Inno di Mameli, l'inno d'Italia.
+            Ma dal prossimo 2 Giugno, in occasione della festa della Repubblica Italiana, L'esercito, le istituzioni
+            e noi cittadini, saremo inviati a cantare il nuovo inno, A Baiano. Per chi volesse già portarsi avanti per impararlo.
+            cliccando su <a class="link" target="blank" href="https://www.youtube.com/watch?v=DjLxtp_6TqM">questo link,</a>
+            verrete reindirizzati alla canzone protagonista del nuovo patriottismo italiano..<br><br>
+            Qui sotto il ritornello: <i><br><br>Da altre parti questa sagra non ce sta<br>
+            Da altre parti questa sagra non se fa<br>se pizza voi magna<br>e prosciutto assapora
+            <br>tu a Baiano ce devi da passa'</i>
+        </div>
+        <img id="firma" src="../../../images/progettazione/Marchio2.png">
+    </body>
+</html>
