@@ -26,7 +26,6 @@
     display: flex;
     background-color: var(--white);
 }
-
 /*MENU*/
 #logo{  
     width: 5%;
@@ -96,6 +95,7 @@
 .link{
     color: var(--grey);
     font-weight: bold;
+    cursor: pointer;
 }
 .link:hover{
     color: var(--ambeee);
@@ -116,6 +116,30 @@
     padding: 0% 0% 0% 0%;
 
     border-radius: 25px;
+}
+.documento{
+    margin: 8%;
+    padding: 1%;
+
+    border-radius: 25px;
+    color: var(--grey);
+    font-weight: bold;
+    font-size: 150%;
+    font-family: itim;
+}
+.documento:hover{
+    color: var(--link);
+    background-color: var(--bluelectric);
+    
+}
+.webeee{
+    color: var(--grey);
+    font-weight: bold;
+    font-family: Shelman;
+    cursor: pointer;
+}
+.webeee:hover{
+    color: var(--ambeee);
 }
 #suggeriti{
     width: 25%;

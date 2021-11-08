@@ -49,4 +49,11 @@ V2.0.4.0
         news 1-8 #ready   
     
     -->barraricerca #upgraded
-    --> news #ready
+    -->news #ready
+
+V2.0.4.1
+    NewsPres:
+    news  #ready old
+    --news  #ready all
+    -->barraricerca #upgraded
+    --gallery?
