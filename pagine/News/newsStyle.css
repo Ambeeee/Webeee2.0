@@ -17,11 +17,10 @@
     --link: #13FF22;
 }
 #sfondo{
-    width: 20%;
-    top: 0%;
-    margin: -5% 0% 0% 40%;
+    width: 100%;
+    margin: -16% 0%;
 
-    position:static;
+    position:relative;
     display: flex;
     background-color: var(--white);
 }
@@ -29,7 +28,7 @@
 /*MENU*/
 #logo{  
     width: 5%;
-    margin: -60% 7% 0 93%;
+    margin: -65% 7% 0 93%;
     position: fixed;
     cursor: pointer;
     transition: transform 0.2s ease-in-out;
@@ -71,7 +70,7 @@
 /*PAGINA*/
 #SfondoPagina{
     width:100%;
-    margin: -15% 0 0 0;
+    margin: -0% 0 0 0;
 
     padding-left:0%;
     padding-top: 0%;   
@@ -81,8 +80,8 @@
     flex-direction: column-reverse;
 }
 #intro{
-    top: 100%;
-    margin: 10% 0% 0% 20%;
+    top: 135%;
+    margin: 5% 0% 0% 20%;
     width: 60%;
 
     position: absolute;
@@ -103,7 +102,7 @@
     background-color: white;
     transform: scale(1.05);
     transition: 0.2s ease-in-out;
-    margin-top: 11%;
+    margin-top: 6%;
 }
 #barra{
     width: 27%;

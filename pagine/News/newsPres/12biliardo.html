@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <!--Titolo-->
+        <title>News/Pres - Webeee2.0</title>
+        <link rel="shortcut icon" href="../../../images/progettazione/logo.png" type="image/png">
+        <!--SCRIPTS-->
+        <link rel="stylesheet" href="newsPres.css">
+        <!--apri menu-->
+        <script lang="JavaScript">
+            function ApriMenu(){
+                menu = document.getElementById("menu");
+                logo = document.getElementById("logo");
+                if(menu.style.display == "none"){
+                    menu.style.display = "flex";
+                }
+                else{
+                    menu.style.display = "none";
+                }
+            }
+        </script>
+        <!--Fonts-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <!--SFONDO-->
+        <img src="../../../images/progettazione/marchio1.png" id="sfondo">
+        </div>
+        <!--MENU-->
+        <img src="../../../images/progettazione/logo.png" id="logo" type= "image/png" title="Apri il menu" onclick="ApriMenu()">
+        <div id="menu" style="display: none">
+            <a href="../../../home.html">
+                <div class=tab title="torna alla pagina iniziale">Home</div>
+            </a>
+            <a href="../../gallery.html">
+                <div class=tab title="vai alla Gallery">Gallery</div>
+            </a>
+            <a href="../../news.html">
+                <div class=tab title="vai alle notizie">News</div>
+            </a>
+        </div>
+
+
+
+
+        <!--PAGINA-->
+        <div id="Titolo">Estero. Ridolfi a Barcellona campione regionale di Biliardo</div>
+        <div id="data">🕑 20 luglio 2021</div>
+        <div id="Intro">
+            Anche in vacanza Ridolfi non si ferma mai!
+        </div>
+        <div id="suggeriti">
+            <div class="titoletto">Leggi Anche:</div>
+            <a class="option"></a>
+        </div>
+        <div class="Testo" style="margin-top: -12%;">
+            Baiano o no, Ridolfi riesce a battere se stesso e gli altri in qualsiasi occasione.
+            Ancora in viaggio a Barcellona (ricordate l'articolo sulla <a class="link" href="11barcellona.html">Capitale Catalana</a>)
+            il CEO di <i>Vento,</i> la linea aerea che lo ha portato fin qui, ha spiazzato tutti nella sua nuova passione, il <b>biliardo.</b><br><br>
+            Avendo finito le risorse, e stanco dei vecchi articoli su di lui, ormai marci dopo averli letti e riletti,
+            il Capo Supremo si è lanciato sul tavolo armato di stecca e precisione. Dopo giorni e giorni di allenamento
+            con il suo fidato compagno (il sottoscritto), durante la resa dei conti con una squadra avversaria,
+            ha lasciato tutti a bocca aperta con le sue performances da vero professionista.<br><br>
+            Palle che saltavano, buche centrate in posizioni scomodissime e, infine, la più grande delle imprese...<br><br>
+            <i>«Wow, incredibile oh. Stavamo per vince, certo, ma non credevo che avremo fatto la storia. Ci stava la palla 8,
+            l'ultima da butta giù, davanti alla buca. Facile, se non fosse che colpirla avrebbe significato imbucare
+            anche la bianca e perdere il match. "Ce provo" me fa, "ma che sei matto? Perdemo così!"<br>
+            Insomma, dopo un tira e molla je faccio "senti, allontana sta palla e via, così famo un bel fallo e ce riprovamo
+            al turno dopo, tanto ancora je manca a quell'altri pe vince..." Non ne ha voluto sape niente. Tra misure,
+            prospettive e prove a vuoto non ce stava a capì niente nessuno. Fatto sta che je la fa! Un colpo da maestro, pulito.
+            <br>una steccata a 3 sponde che c'ha fatto stravince... Ve lascio il video, manco lui sa come ha fatto.»</i>
+        </div>
+        <video controls poster="anteprimaImg.jpg" class="Foto">
+            <source src=".../../../../../images/news/Pres/12biliardoVid.mp4" type="video/mp4">
+        </video>
+        <div class="Testo">
+            Incredibile cosa sia capace di fare il nostro Presidente. Vi ricordiamo inoltre che nella <a class="link" href="../../gallery.html">Gallery</a>
+            potete trovare la nuova sezione dedicata alle foto del viaggio a Barcellona.<br>
+            Per il resto vi consigliamo di rimanere sintonizzati qui su <a class="webeee" href="../../../home.html">Webeee</a>
+            per non perdervi altre avventure su Ridolfi.
+        </div>
+        <img id="firma" src="../../../images/progettazione/Marchio2.png">
+    </body>
+</html>
