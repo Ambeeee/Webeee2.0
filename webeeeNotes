@@ -70,4 +70,10 @@ V2.0.6.0
     NewsPres:
         whatsapp.html #ready
 
-    
+V2.0.6.1
+    NewsPres:
+        news #fixed
+            -->consigliati #added
+        whatsapp #upgraded
+        -->pagina #fixed
+    -->Gallery: #added #ready
