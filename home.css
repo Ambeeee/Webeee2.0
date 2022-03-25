@@ -4,7 +4,6 @@
     padding: 4% 0 0 0;
     text-decoration: none;
 }
-
 :root{
     --ambeee: #ffab40;
     --ambeShadow: #b87711;
@@ -17,7 +16,6 @@
     --white: white;
     --link: #13FF22;
 }
-
 #sfondo{
     width: 100%;
     margin-top: -8%;
@@ -27,7 +25,6 @@
     display: flex;
 }
 
-
 /*INTESTAZIONE*/
 
 #Titolo{
@@ -36,13 +33,11 @@
     display: flex;
     flex-direction: column;
 }
-
 #welcome{
     width: 18%;
     margin: -54% -2% -0.5% 9%;
     position: sticky;
 }
-
 #webeee{
     width: 54%;
     margin: -7% 0% 0% 7%;
@@ -59,11 +54,9 @@
     cursor: pointer;
     transition: transform 0.2s ease-in-out;
 }
-
 #logo:hover{
     transform: scale(1.05);
 }
-
 #menu{
     width: 0%; /*5% - 0*/
     max-width: 0%;
@@ -76,7 +69,6 @@
     flex-direction: row;
     transition: transform 2.0 ease-in-out;
 }
-
 .tab{
     width: 90%; /*60%*/
     margin: 0% 20; /*20px*/
@@ -89,7 +81,6 @@
     text-align: center;
     font-family: 'Permanent Marker', cursive;
 }
-
 .tab:hover{
     transform: scale(1.05);
     transition: transform 0.2s ease-in-out;
@@ -120,4 +111,118 @@
     border-radius: 20px;
     justify-content: center;
     align-items: center;
+}
+
+
+
+/*MOBILE*/
+@media screen and (max-width: 1080px){
+    html{
+        margin: 0;
+        padding: 0 0 0 0;
+    }
+    body{
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+    }
+    #sfondo{
+        width: 100%;
+        margin-top: 500px;
+        position:static;
+    }
+    /*INTESTAZIONE*/
+    #Titolo{
+        width: 100%;
+        margin: -65% 0 0 0;
+    }
+    #welcome{
+        width:  30%;
+        margin: 0px 0 0 0;
+        align-self: center;
+        position: sticky;
+    }
+    #webeee{
+        width: 65%;
+        align-self: center;
+        position: sticky;
+        
+    }
+
+    /*MENU*/
+    #logo{
+        display: none;
+    }
+    #menu{
+        display: none;
+    }
+
+    /*PAGINA*/
+    #pagina{
+        height: 65%;
+        margin: 80px 0 0 0;
+        padding: 0 0 0 0;
+        display: flex;
+        position: sticky;
+    }
+    #consigliati{
+        height: 10%;
+        width: 15%;
+        margin: -95% 40%;
+        padding: 1% 2% 3% 1%;
+
+        background-color: var(--second);
+        color: var(--white);
+        font-family: 'Permanent Marker', cursive;
+        font-size: 125%;
+        border-radius: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    /*Menu Mobile*/
+    #menuBox{
+        width: 80%;
+        height: 550px;
+        margin: -600px 10% 5px 10%;
+        padding: 0px 0 20px 0;
+
+        border-radius: 25px;
+        position: absolute;
+        justify-self: center;
+        background-color: white;
+        display: none;
+        
+    }
+    #menuBox img{
+        width: 20%;
+        margin: 30px 40% 0px 40%;
+        transform: rotate(180deg);
+    }
+    #menuM{
+        margin: -40px 0 0 0;
+        padding: 30px 0 10 0;
+
+        display: flex;
+        flex-direction: column;
+    }
+    .mobileTab{
+        width: auto;
+        margin: 20px 10% 20px 10%;
+        padding: 20px;
+        
+        background-color: var(--bluelectric);
+        border-radius: 20px;
+        text-align: center;
+        text-transform: capitalize;
+
+        font-size: 40px;
+        color: white;
+        text-align: center;
+        font-family: 'Permanent Marker', cursive;
+    }
+    #frecciaMenu{
+        width: 20%;
+        margin: -200px 40% 0px 40%;
+        position: fixed;
+    }
 }
