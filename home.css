@@ -183,11 +183,11 @@
     #menuBox{
         width: 80%;
         height: 550px;
-        margin: -600px 10% 5px 10%;
+        margin: -650px 10% 50px 10%;
         padding: 0px 0 20px 0;
 
         border-radius: 25px;
-        position: absolute;
+        position: fixed;
         justify-self: center;
         background-color: white;
         display: none;
@@ -220,9 +220,12 @@
         text-align: center;
         font-family: 'Permanent Marker', cursive;
     }
+    .mobileTab a{
+        color: white;
+    }
     #frecciaMenu{
         width: 20%;
-        margin: -200px 40% 0px 40%;
+        margin: -20% 40% 0px 40%;
         position: fixed;
     }
 }
