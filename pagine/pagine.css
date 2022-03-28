@@ -1,10 +1,7 @@
 /*GENERALE*/
 *{
-    margin: 2% 0% 0% 0%;
-    padding: 4% 0 0% 0;
     text-decoration: none;
 }
-
 :root{
     --ambeee: #ffab40;
     --ambeShadow: #b87711;
@@ -17,103 +14,340 @@
     --white: white;
     --link: #13FF22;
 }
-
+body{
+    margin: 2% 0% 0% 0%;
+    padding: 4% 0 0% 0;
+    background-color: var(--ambeee);
+}
 #sfondo{
     width: 100%;
     margin-top: -8%;
     margin-left: 0%;
 
     position:sticky;
-    display: flex;
 }
 
 
 /*INTESTAZIONE*/
-
 #intestazione{
-    margin: 0% 0% 0% 5%;
+    height: 20%;
+    width: 50%;
+    margin: 10% 20% 25%;
+    padding: 5%;
 
-    display: flex;
-    flex-direction: column;
+    background-color: white;
+    border-radius: 100px;
 }
-
 #titolo{
-    width: 25%;
-    margin: -120% 0% 0% 8%;
-
-    position: sticky;
+    width: 50%;
+    margin: 0% 25%;
 }
 
 
 /*MENU*/
-#logo{  
+#logo{   
     width: 5%;
-    margin: -125% 7% 0 93%;
+    margin: 0px 8% 0 93%;
     position: fixed;
     cursor: pointer;
-    transition: transform 0.2s ease-in-out;
+    z-index: 1;
+    padding: 0.2%;
+    background-color: white;
+    border-radius: 100px;
+    transition: 0.5s;
+    
 }
-
 #logo:hover{
     transform: scale(1.05);
+    background-color: var(--grey);
 }
-
 #menu{
-    width: 5%;
-    top: -2%;
-    right: 30%;
-
+    width: 0%;
+    right: 400px;
+    margin: 20px 5% 0 0%;
     position: fixed;
     display: flex;
     flex-direction: row;
+    z-index: 2;
 }
-
 .tab{
     width: 90%;
-    margin: 0% 30px; /*30px*/
-    
+    margin: 0% 20;
     background-color: var(--white);
     border-radius: 25px;
-
-    font-size: 100%;
+    font-size: 90%;
+    
+    font-size: 20px;
     color: var(--grey);
     text-align: center;
     font-family: 'Permanent Marker', cursive;
+    transition: 0.5s;
 }
-
 .tab:hover{
     transform: scale(1.05);
-    transition: transform 0.2s ease-in-out;
-    color: var(--bluelectric)
+    color: var(--ambeee);
+    background-color: var(--grey);
 }
 
 
 /*PAGINA*/
-
-.titoloNews{
-    width: 20%;
-    position: absolute;
-    cursor: pointer;
-}
-
-.titoloNews:hover{
-    transform: scale(1.05);
-    transition: transform 0.2s ease-in-out;;
-}
-
-#NewsPres{
-    top: 90%;
-    left: 70%;
-}
-
-#NewsSpettacolo{
-    top: 130%;
-    left: 12%;
-}
-
 #pagina{
-    margin-top: -10%;
+    margin-top: 150px;
     height: 100%;
 
-    background-color: var(--ambeee);
+}
+#introNews{
+    width: 70%;
+    margin: 0% 10%;
+    padding: 5%;
+    background-color: white;
+    border-radius: 25px;
+}
+#introNews p{
+    font-size: 40px;
+    text-shadow: 1px 1px 0px white;
+    font-family: "Itim";
+    text-align: justify;
+}
+#sezioni{
+    width: 100%;
+    margin: 10% auto;
+    padding: 5% 0%;
+    display: flex;
+    flex-direction: row
+}
+.sezione{
+    width: 40%;
+    margin: 5% auto;
+    padding: 2%;
+
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 5px 5px 0px  rgba(0, 0, 0, 0.384);
+    display: flex;
+    flex-direction: column;
+    transition: 1.0s;
+}
+.sezione:hover{
+    background-color: var(--grey);
+    text-shadow: 1px 1px 0px white;
+}
+.titoloSez{
+    width: 40%;
+    margin: 0;
+    font-size: 40px;
+    font-family: 'permanent marker';
+    color: var(--bluelectric);
+
+    position: sticky;
+    cursor: pointer;
+}
+#Pres{
+    color: goldenrod;
+}
+#Spettacolo{
+    color: var(--red);
+}
+.testo{
+    width: 50%;
+    margin: 2% 0 7% 0;
+    color: black;
+    font-size: 20px;
+    font-family: 'Roboto Mono';
+}
+.btn{
+    width: 20%;
+    
+    color: white;
+    font: 30px Forte;
+
+    background-color: var(--bluelectric);
+    border-radius: 25px;
+    transition: 0.5s;
+}
+.btn:hover{
+    color: var(--link);
+    transform: scale(1.05);
+}
+
+
+#frecciaMenu{
+    display: none;
+}
+
+
+
+/*MOBILE*/
+@media screen and (max-width: 480px){
+    html{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+    }
+    #sfondo{
+        width: 100%;
+        margin-top: 240px;
+        position:static;
+    }
+    /*INTESTAZIONE*/
+    #intestazione{
+        height: 5%;
+        width: 50%;
+        margin: 10% 20% 25%;
+        padding: 5%;
+    
+        background-color: white;
+        border-radius: 100px;
+    }
+    #titolo{
+        width: 50%;
+        margin: 0% 25%;
+    }
+
+    /*MENU*/
+    #logo{
+        display: none;
+    }
+    #menu{
+        display: none;
+    }
+
+    /*PAGINA*/
+    #pagina{
+        margin-top: 150px;
+        height: 10%;
+
+    }
+    #introNews{
+        width: 70%;
+        margin: 0% 10%;
+        padding: 5%;
+        background-color: white;
+        border-radius: 25px;
+    }
+    #introNews p{
+        font-size: 25px;
+        font-family: "Itim";
+        text-align: center;
+        overflow-wrap: break-word;
+    }
+    #sezioni{
+        width: 100%;
+        margin: 10% auto;
+        padding: 5% 0%;
+        display: flex;
+        flex-direction: column;
+    }
+    .sezione{
+        width: 60%;
+        margin: 5% auto;
+        padding: 2%;
+    
+        background-color: white;
+        border-radius: 25px;
+        box-shadow: 5px 5px 0px  rgba(0, 0, 0, 0.384);
+        display: flex;
+        flex-direction: column;
+    }
+    .titoloSez{
+        width: 60%;
+        margin: 0 auto;
+        font-size: 25px;
+        font-family: 'permanent marker';
+        color: var(--bluelectric);
+        text-align: center;
+    
+        position: sticky;
+        cursor: pointer;
+    }
+    #Pres{
+        color: goldenrod;
+    }
+    #Spettacolo{
+        color: var(--red);
+    }
+    .testo{
+        width: 80%;
+        margin: 2% auto;
+        color: black;
+        text-align: center;
+        font-size: 15px;
+        font-family: 'Roboto Mono';
+    }
+    .btn{
+        width: 20%;
+        
+        color: white;
+        font: 30px Forte;
+    
+        background-color: var(--bluelectric);
+        border-radius: 25px;
+        transition: 0.5s;
+    }
+    .btn:hover{
+        color: var(--link);
+        transform: scale(1.05);
+    }
+    
+    /*Menu Mobile*/
+    #menuBox{
+        width: 70%;
+        height: 200px;
+        margin: 300px 15% 50px;
+        padding: 0px 0 20px 0;
+
+        border-radius: 25px;
+        position: fixed;
+        justify-self: center;
+        background-color: white;
+        display: none;
+        
+    }
+    #menuBox img{
+        width: 20%;
+        margin: 20px 40% 10px 40%;
+        transform: rotate(180deg);
+    }
+    #menuM{
+        margin: -50px 0 0 0;
+        padding: 35px 0 10 0;
+
+        display: flex;
+        flex-direction: column;
+    }
+    .mobileTab{
+        width: auto;
+        margin: 10px 10% 10px 10%;
+        padding: 5px;
+        
+        background-color: var(--bluelectric);
+        border-radius: 20px;
+        text-align: center;
+        text-transform: capitalize;
+
+        font-size: 15px;
+        color: white;
+        text-align: center;
+        font-family: 'Permanent Marker', cursive;
+    }
+    .mobileTab a{
+        color: white;
+    }
+    #frecciaMenu{
+        width: 20%;
+        margin: 500px 40% 0 40%;
+        position: fixed;
+        display: block;
+    }
+    @media screen and (max-height: 732px){
+        #menuBox{
+            margin-top: 150px;
+        }
+        #frecciaMenu{
+            margin-top: 350px;
+        }
+    }
 }

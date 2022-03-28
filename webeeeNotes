@@ -1,11 +1,13 @@
-Statuses
+Statuses:
     to do:                          --->
     new section/feature:            #added 
     bugs removed:                   #fixed
     new features added:             #upgraded
     only needs to be responsive:    #ready
     made responsive:                #resp
+    complete but...:                #done
     complete:                       #DONE
+
 
 
 V 2.0 
@@ -103,3 +105,8 @@ V2.0.7.0
     Home: #resp
     ---> vedi sopra
   
+V2.0.7.1
+    Home: #done
+    News: #done
+    -->NewsPres #done
+    -->Gallery #done

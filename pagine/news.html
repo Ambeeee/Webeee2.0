@@ -4,6 +4,7 @@
         <title>News - Webeee2.0</title>
         <link rel="shortcut icon" href="../images/progettazione/logo.png" type="image/png">
         <!--Script-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="pagine.css">
         <script lang="JavaScript">
             function ApriMenu(){
@@ -16,6 +17,18 @@
                     menu.style.display = "none";
                 }
             }
+            function menuOn(){
+                menu = document.getElementById("menuBox")
+                icona = document.getElementById("frecciaMenu")
+                menu.style.display = "block"
+                icona.style.display = "none"
+            }
+            function menuOff(){
+                menu = document.getElementById("menuBox")
+                icona = document.getElementById("frecciaMenu")
+                menu.style.display = "none"
+                icona.style.display = "block"
+            }
         </script>
         <!--Fonts-->
         <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -26,14 +39,6 @@
     </head>
     
     <body>
-        <!--SFONDO-->
-        <img src="../images/progettazione/sfondo News.png" id="sfondo">
-        
-        <!--INTESTAZIONE-->
-        <div id="intestazione">
-            <img src="../images/progettazione/News.png" id="titolo" title="Per essere sempre aggiornati!">
-        </div>
-
         <!--MENU-->
         <img src="../images/progettazione/logo.png" id="logo" type= "image/png" title="Apri il menu" onclick="ApriMenu()">
         
@@ -50,9 +55,50 @@
             
         </div>
 
+        <!--SFONDO-->
+        <img src="../images/progettazione/sfondo News.png" id="sfondo" style="display: none">
+        
+        <!--INTESTAZIONE-->
+        <div id="intestazione">
+            <img src="../images/progettazione/News.png" id="titolo" title="Per essere sempre aggiornati!">
+        </div>
+
+        
+
         <!--PAGINA-->
-        <a href="News/newsPres.html"><img class="titoloNews" id="NewsPres" src="../images/progettazione/Titoletto Pres.png" href="News/newsPres.html"></div></a>
-        <a href="News/gallery.html"><img class="titoloNews" id="NewsSpettacolo" src="../images/progettazione/Titoletto Spettacolo.png"></div></a>
-        <div id="pagina"></div>
+        <div id="pagina">
+            <div id="introNews">
+                <p class="intro">Aoohfhfhfhfhdfdgd hshafhfhfhfhhfhf</p>
+            </div>
+            <div id="sezioni">
+                <a href="News/newsPres.html" class="sezione">
+                    <div class="info">
+                        <div class="titoloSez" id="Pres">Il Pres</div>
+                        <p class="testo">Baiano baiano baiano baiano</p>
+                    </div>
+
+                </a>
+                <a href="News/gallery.html" class="sezione">
+                    <div class="info">
+                        <div class="titoloSez" id="Spettacolo">Spettacolo</div>
+                        <p class="testo">Boh qui non so ancora che mettece</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+        
+        
+
+        <!--MENU MOBILE-->
+        <div id="menuBox" style="display:none">
+            <img src="../images/progettazione/frecciaMenu.png" alt="chiudimenu" onclick="menuOff()">
+            <div id="menuM">
+                <a class="mobileTab" href="../home.html">home</a>
+                <a class="mobileTab" href="gallery.html">gallery</a>
+                <a class="mobileTab" href="news.html">news</a>
+            </div>
+        </div>
+        <img src="../images/progettazione/frecciaMenu.png" alt="aprimenu" id="frecciaMenu" onclick="menuOn()">
     </body>
 </html>
