@@ -296,7 +296,7 @@ body{
     #menuBox{
         width: 70%;
         height: 200px;
-        margin: 300px 15% 50px;
+        margin: 250px 15% 50px;
         padding: 0px 0 20px 0;
 
         border-radius: 25px;
@@ -338,7 +338,7 @@ body{
     }
     #frecciaMenu{
         width: 20%;
-        margin: 500px 40% 0 40%;
+        margin: 450px 40% 0 40%;
         position: fixed;
         display: block;
     }

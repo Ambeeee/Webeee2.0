@@ -1,7 +1,7 @@
 /*GENERALE*/
 *{
-    margin: 2% 0% 0% 0%;
-    padding: 4% 0 0% 0;
+    margin:0%;
+    padding:0;
     text-decoration: none;
 }
 :root{
@@ -16,61 +16,64 @@
     --white: white;
     --link: #13FF22;
 }
+body{
+    margin: 7 0 0 0;
+    padding: 4 0 0 0;
+}
 #sfondo{
     width: 100%;
-    margin: -16% 0%;
+    margin-top: 0% auto;
 
-    position:relative;
+    position:sticky;
     display: flex;
-    background-color: var(--white);
+    z-index: 0;
 }
+
 
 /*MENU*/
 #logo{  
     width: 5%;
-    margin: -65% 7% 0 93%;
+    margin: 50px 8% 0 93%;
     position: fixed;
     cursor: pointer;
-    transition: transform 0.2s ease-in-out;
+    z-index: 1;
 }
 #logo:hover{
     transform: scale(1.05);
 }
 #menu{
-    width: 5%;
-    top: 0%;
-    right: 30%;
-
+    width: 0%;
+    right: 400px;
+    margin: 60px 5% 0 0%;
     position: fixed;
     display: flex;
     flex-direction: row;
+    z-index: 2;
 }
 .tab{
     width: 90%;
-    margin: 0% 30px; /*30px*/
-    
+    margin: 0% 20;
     background-color: var(--white);
     border-radius: 25px;
-
-    font-size: 100%;
+    font-size: 90%;
+    
+    font-size: 20px;
     color: var(--grey);
     text-align: center;
     font-family: 'Permanent Marker', cursive;
+    transition: 0.5s;
 }
 .tab:hover{
     transform: scale(1.05);
-    transition: transform 0.2s ease-in-out;
-    color: var(--bluelectric)
+    color: var(--ambeee);
+    background-color: var(--grey);
 }
-
-
-
 
 
 /*PAGINA*/
 #SfondoPagina{
     width:100%;
-    margin: -0% 0 0 0;
+    margin: -40% 0 0 0;
 
     padding-left:0%;
     padding-top: 0%;   
@@ -79,10 +82,10 @@
     display: flex;
     flex-direction: column-reverse;
 }
-#intro{
-    top: 135%;
-    margin: 5% 0% 0% 20%;
+#intro{ 
     width: 60%;
+    margin: -30% 20%;
+    
 
     position: absolute;
     align-self: center;
@@ -90,24 +93,24 @@
     border-radius: 25px;
 
     text-align: center;
-    font-size: 120%;
+    font-size: 20px;
     font-weight: bold;
     line-height: 200%;
     font-family: 'Goblin One', cursive;
+    transition: 1.5s;
 }
 #intro p{
-    margin: -9% 1% 2% 1%;
+    margin: 2%;
+    
 }
 #intro:hover{
     background-color: white;
-    transform: scale(1.05);
-    transition: 0.2s ease-in-out;
-    margin-top: 6%;
+    transform: scale(1.02);
 }
 #barra{
     width: 27%;
     height: 5%;
-    margin: -20% 0% 0% 37%;
+    margin: 5% 0% 0% 37%;
     padding: 0% 0% 0% 2%;
 
     border-radius: 25px;
@@ -117,7 +120,7 @@
 .pagina{
     height: auto;
     margin: -1% 0% 0% 0%;
-    padding: 0 0 10% 0;
+    padding: 20% 0;
 
     position: static;
     background-color: var(--ambeee);
@@ -127,15 +130,15 @@
 #elencoTag{
     width: 22.5%;
     height: auto;
-    margin: -17.25% 0% 0% 38.25%;
+    margin: -2.5% 0% 0% 38.25%;
     padding: 0% 0% 1% 2%;
     
 
     position: absolute;
-    display: none; /*diventa Flex*/
+    display: none; 
     flex-direction: column-reverse;
     background-color: var(--white);
-    box-shadow: 0px 1px 0px 1px black;
+    box-shadow: 0px 1px 1px black;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 
@@ -143,13 +146,13 @@
     color: var(--grey);
 }
 
+
 /*Sezione News*/
 .notizia{
-    top: 0%;
-    margin: 0% 0% 0% 5%;
-    padding: 0% 0% 2% 0%;
-    height: 120%;
-    width: 60%;
+    width: 70%;
+    margin: 5% auto;
+    padding: 2%;
+    
     
     background-color: var(--white);
     box-shadow: var(--ambeShadow);
@@ -162,44 +165,210 @@
     border-radius: 25px;
 }
 .testo{
-    padding: 0% -20%;
+    width: 90%;
+    min-width: 400px;
+    margin: 0 5%;
+    padding: 0% 0;
+    font-size: 25px;
     display: flex;
     flex-direction: column;
 }
 .newsImg img{
-    margin: -5% 0% 0% -20%;
-    width: 100%;
+    width: 50%;
+    min-width: 350px;
+    max-width: 450px;
+    margin: 5% 5% 5% 0;
+    
     
     position: sticky;
     border-radius: 50px;
 }
 .Titolo{
     margin: 0% 0% 0% 0%;
-    width: 60%;
+    width: 100%;
 
     font-family: "Itim";
     color:var(--black);
     font-weight: bold;
     font-size: 150%;
-    text-align: left;
+    text-align: justify;
 }
 .Descrizione{
-    margin: 1% 0% 1% 0%;
-    width: 60%;
+    margin: 5% 0;
+    width: 90%;
 
     overflow: hidden;
     position: sticky;
 
     font-family: "Roboto Mono";
     color:var(--black);
-    font-size: 15px;
-    text-align: left;
+    font-size: 20px;
+    text-align: justify;
 }
 .tag{
-    width: 30%;
-    margin: 0% 0% 0% 0%;
+    width: 100%;
+    margin: 5% 0%;
 
+    font-size: 15px;
     display: flex;
     flex-direction: row;
     color: var(--grey)  ;
+}
+
+/*MOBILE*/
+@media screen and (max-width: 480px){
+    #sfondo{
+        width: 100%;
+        margin: -16% 0%;
+    
+        position:relative;
+        display: flex;
+        background-color: var(--white);
+    }
+    
+    /*MENU*/
+    #logo{
+        display: none;
+    }
+    #menu{
+        display: none;
+    }
+        
+    /*PAGINA*/
+    #SfondoPagina{
+        width:100%;
+        margin: 0% 0 0 0;
+    
+        padding-left:0%;
+        padding-top: 0%;   
+    
+        position: static;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #intro{
+        top: 135%;
+        margin: 5% 0% 0% 20%;
+        width: 60%;
+    
+        position: absolute;
+        align-self: center;
+        cursor:pointer;
+        border-radius: 25px;
+    
+        text-align: center;
+        font-size: 120%;
+        font-weight: bold;
+        line-height: 200%;
+        font-family: 'Goblin One', cursive;
+    }
+    #intro p{
+        margin: -9% 1% 2% 1%;
+    }
+    #intro:hover{
+        background-color: white;
+        transform: scale(1.05);
+        transition: 0.2s ease-in-out;
+        margin-top: 6%;
+    }
+    #barra{
+        width: 27%;
+        height: 5%;
+        margin: -20% 0% 0% 37%;
+        padding: 0% 0% 0% 2%;
+    
+        border-radius: 25px;
+        position: absolute;
+    
+    }
+    .pagina{
+        height: auto;
+        margin: -1% 0% 0% 0%;
+        padding: 0 0 10% 0;
+    
+        position: static;
+        background-color: var(--ambeee);
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #elencoTag{
+        width: 22.5%;
+        height: auto;
+        margin: -17.25% 0% 0% 38.25%;
+        padding: 0% 0% 1% 2%;
+        
+    
+        position: absolute;
+        display: none; /*diventa Flex*/
+        flex-direction: column-reverse;
+        background-color: var(--white);
+        box-shadow: 0px 1px 0px 1px black;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    
+        font-family: 'Goblin One', cursive;
+        color: var(--grey);
+    }
+    
+    
+    /*Sezione News*/
+    .notizia{
+        top: 0%;
+        margin: 0% 0% 0% 5%;
+        padding: 0% 0% 2% 0%;
+        height: 120%;
+        width: 60%;
+        
+        background-color: var(--white);
+        box-shadow: var(--ambeShadow);
+        position: static;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        border-radius: 25px;
+    }
+    .testo{
+        padding: 0% -20%;
+        display: flex;
+        flex-direction: column;
+    }
+    .newsImg img{
+        margin: -5% 0% 0% -20%;
+        width: 100%;
+        
+        position: sticky;
+        border-radius: 50px;
+    }
+    .Titolo{
+        margin: 0% 0% 0% 0%;
+        width: 60%;
+    
+        font-family: "Itim";
+        color:var(--black);
+        font-weight: bold;
+        font-size: 150%;
+        text-align: left;
+    }
+    .Descrizione{
+        margin: 1% 0% 1% 0%;
+        width: 60%;
+    
+        overflow: hidden;
+        position: sticky;
+    
+        font-family: "Roboto Mono";
+        color:var(--black);
+        font-size: 15px;
+        text-align: left;
+    }
+    .tag{
+        width: 30%;
+        margin: 0% 0% 0% 0%;
+    
+        display: flex;
+        flex-direction: row;
+        color: var(--grey)  ;
+    }
 }
